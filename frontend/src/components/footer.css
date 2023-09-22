@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #ddd;
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: small;
+    color: #888686;
+}

@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.contact {
+  margin-right: 2em;
+}
+
+
+
+/* Style for the select button */
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  outline: none;
+}
+
+
+/* Style for the select options */
+select option {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+/* Style for the selected option */
+select option:checked {
+  background-color: #007bff; /* Change to your desired selected option color */
+  color: #fff;
+}
+.header-middle{
+    display: flex;
+    gap: 20px;
+}
+.header button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6ccacb; /* Button color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+  }
+
+  /* Media query for screens with a maximum width of 768px (tablets) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .header img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .contact {
+    margin-right: 0; /* Remove margin-right on smaller screens */
+  }
+
+  select {
+    width: 100%; /* Make select elements full width on smaller screens */
+  }
+
+  .header-middle {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .header button {
+    margin-top: 10px; /* Add some space between the button and other elements */
+  }
+}
+
+/* Media query for screens with a maximum width of 480px (mobile) */
+@media (max-width: 480px) {
+  .header img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  select {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .header button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
